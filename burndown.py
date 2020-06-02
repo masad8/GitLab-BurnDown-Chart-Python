@@ -46,6 +46,7 @@ x, y = zip(*lists)
 x = list(x)
 y = [int(i) for i in y]
 plt.clf()
+plt.figure(figsize=(20,10))
 plt.plot(x,y)
 plt.xlabel('Date')
 plt.ylabel('Estimated Hours')
