@@ -38,8 +38,10 @@ for row in reader:
    k, v = row
    d[k] = v
 
+chart_plot_days = 14
+
 lists = sorted(d.items())
-lists = lists[-14:]
+lists = lists[-chart_plot_days:]
 x, y = zip(*lists)
 x = list(x)
 y = [int(i) for i in y]
